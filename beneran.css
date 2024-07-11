@@ -1,0 +1,448 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(180deg,rgb(255, 0, 85) 0%,rgb(139, 1, 47) 33%,rgb(22, 0, 8) 100%);
+}
+*{
+    user-select: none;
+    -webkit-user-select: none;
+ }  
+@font-face {
+    font-family: 'ugly';
+    src: url(font/UGLYR___.TTF);
+}
+@font-face {
+    font-family: 'love story';
+    src: url(font/lovestory.ttf);
+
+}
+@font-face {
+    font-family: 'LOVESTORY';
+    src: url(font/LoveStory.otf);
+}
+@font-face {
+    font-family: 'clasic story';
+    src: url(font/Classic-Story.ttf);
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,rgb(255, 0, 85) 0%,rgb(139, 1, 47) 33%,rgb(22, 0, 8) 100%);
+    z-index: 1;
+    position: absolute;
+    overflow:auto;
+}
+.background .panjang{
+    width: 1600px;
+    height: 130px;
+    background:linear-gradient(90deg,red 0%, rgb(44, 1, 1) 100%);
+    position:sticky;
+    z-index: 2;
+top: 18px;
+margin-left: auto;
+margin-right: auto;
+
+
+box-shadow:inset 0 0 8px 5px rgb(56, 11, 11),0 0 8px 5px rgb(53, 45, 45);
+
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+  
+  
+}
+
+/*dalam panjang*/
+.panjang div a{
+    text-decoration: none; 
+}
+.panjang div:nth-child(1)
+img{height: 110px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 120px;
+    /*box-shadow: 0 0 10px 6px rgb(15, 13, 13);*/
+    border-color:rgb(15, 13, 13);
+    border-style: solid;
+    transition: 1.3s;
+}
+.panjang div:nth-child(1) img:hover{
+    border-color: beige;
+}
+.panjang div:nth-child(1) img:active{
+    border-color: beige;
+}
+
+
+
+.panjang div:nth-child(5) img{
+    height: 110px;
+    background-size: cover;
+    border-radius: 50%;
+    width: 120px;
+   /* box-shadow: 0 0 10px 6px beige;*/
+   border-color: beige;
+   border-style: solid;
+transition: 1.3s;
+}
+.panjang div:nth-child(5) img:hover{
+    border-color: rgb(15, 13, 13);
+}
+.panjang div:nth-child(5) img:active{
+    border-color: rgb(15, 13, 13);
+}
+.panjang div:nth-child(5){
+    margin-right: 33px;
+    margin-top: 5px;
+    
+}
+
+.panjang div:nth-child(1){
+    margin-left: 33px;
+    margin-top: 5px;
+    
+}
+.panjang div:nth-child(2){
+    position: relative;
+    right: 160px;
+  
+    
+} .panjang div:nth-child(2) p{
+font-size: 90px;
+
+font-family: 'ugly';
+color: rgb(15, 13, 13);
+transition: 1.3s;
+
+
+}
+.panjang div:nth-child(2) p:hover{
+   
+    color: beige;
+    
+    
+ }
+ .panjang div:nth-child(2) p:active{
+   
+    color: beige;
+   
+    
+}
+.panjang div:nth-child(4) p{
+    font-size: 90px;
+color: beige;
+font-family: 'love story';
+transition: 1.3s;
+
+ }
+ .panjang div:nth-child(4) p:hover{
+   
+        color: rgb(15, 13, 13);
+        
+        
+ }
+ .panjang div:nth-child(4) p:active{
+       
+        color: rgb(15, 13, 13);
+       
+        
+        }
+.panjang div:nth-child(4){
+     
+    position:relative;
+    left: 160px;
+    
+    
+}
+.panjang div:nth-child(3) p{
+    font-size: 90px;
+   left: auto;
+     right: auto;
+     color: goldenrod;
+text-shadow: 5px 5px 7px beige,-5px -5px 7px  rgb(15, 13, 13);
+margin-left: 10px;
+    }
+
+
+/**/
+/*board*/
+.board{
+    width: 864px;
+    height: 1455px;
+    background-color: rgb(146, 24, 64,.6) ;
+    position: absolute;
+   box-shadow: 0px 0px 8px 5px rgb(54, 4, 2);
+    top: 350px;
+    left: 390px;
+   z-index: 1;
+}
+
+/*layang*/
+
+.layang img{
+    position:fixed;
+    height: 94px;
+    pointer-events: none;
+    
+  
+}
+.layang img:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+
+}
+.layang img:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.layang img:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.layang img:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.layang img:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.layang img:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+
+}
+.layang img:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.layang img:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.layang img:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.layang img:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+.layang img:nth-child(11){
+    top: 83%;
+    left: 87%;
+    animation: animate 9s linear infinite;
+}
+@keyframes animate{
+    0%{
+       transform: scale(0) translateY(0) rotate(0);
+       opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+     }
+ 
+}
+/**/
+/*font*/
+
+/*board*/
+.board .li img{
+    height: 140px;
+    width: 130px;
+    border-radius: 50%;
+    border-color:beige;
+    border-style: solid;
+}
+.board .bersama img{
+    height: 400px;
+    border-color:beige;
+    border-style: solid;
+    
+}
+.board .bersama{
+    text-align: center;
+    margin:40px;
+}
+.board .li{
+    display: flex;
+    align-items: center;
+ margin-left: 80px;
+
+
+ }
+
+
+
+.board p{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: 3px black;
+    font-family: 'LOVESTORY';
+    text-shadow: 5px 5px 10px beige;
+}
+.board p:nth-child(1){
+    margin-top: 20px;
+}
+.board .paragraph{
+    padding: 50px;
+}
+.board ul li ,.board div{
+    font-size: 22px;
+    color:black;
+    text-shadow: 0px 0px 7px beige;
+}
+.background .tombol ul li{
+    position:relative;
+    height: 50px;
+    left: 695px;
+  
+    top: 1700px;
+    width: 80px;
+    background-color: rgb(15, 13, 13);
+    z-index: 2;
+ text-align: center;
+
+    list-style: none;
+    margin-right: 40px;
+    font-family: 'clasic story';
+    font-size: 27px;
+    color: beige;
+    padding-top: 10px;
+border: 2px beige solid;
+transition: 1s;
+
+}
+.background .tombol a{
+    text-decoration: none;
+}
+.background .tombol ul li:hover{
+    color:rgb(15, 13, 13);
+    background-color: beige;
+    border: 2px rgb(15, 13, 13);
+
+}
+.background .tombol ul li:active{
+    color:rgb(15, 13, 13);
+    background-color: beige;
+    border: 2px rgb(15, 13, 13);
+
+}
+.background .tombol ul li p{
+   margin: auto;
+   
+}
+
+
+.background .tombol ul{
+    
+    display: flex;
+     
+}
+.melayang div:nth-child(1) img:nth-child(1){
+    position: absolute;
+  z-index: 1;
+  transform: rotate(33deg);
+  height: 110px
+
+}
+.melayang div:nth-child(1) img:nth-child(2){
+    position: absolute;
+  z-index: 1;
+  transform: rotate(-33deg);
+  height: 110px;
+
+}
+.melayang div:nth-child(1) img:nth-child(1){
+    top: 1600px;
+  left: 20px;
+}
+.melayang div:nth-child(1) img:nth-child(2){
+    top: 1600px;
+    left: 1290px;
+}
+.melayang div:nth-child(2) img{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    height: 80px;
+    left: 635px;
+    
+}
+.melayang div:nth-child(2) img:nth-child(2){
+   left: 968px;
+}
+
+.melayang div:nth-child(3) img{
+    position: absolute;
+    z-index: 1;
+   
+    height: 80px;
+   
+}
+
+.melayang div:nth-child(3) img:nth-child(1){
+    top: 240px;
+  left: 1139px;
+  height: 190px;
+}
+
+.melayang div:nth-child(3) img:nth-child(2){
+    
+    height: 190px;
+    top: 815px;
+    left: 460px;
+  
+
+}
+.melayang div:nth-child(3) img:nth-child(3){
+    
+    height: 120px;
+    top: 1400px;
+    left:1400px;
+}
+.melayang div:nth-child(4) img{
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+}
+.melayang div:nth-child(4) img:nth-child(1){
+    top: 420px;
+    left: 580px;
+    height: 160px;
+    transform: scalex(-1);
+}
+.melayang div:nth-child(4) img:nth-child(2){
+    top: 360px;
+  left: 470px;
+  height: 100px;
+  width: 90px;
+  border-radius: 50%;
+  border-color:beige;
+    border-style: solid;
+   animation: wow 2s linear infinite;
+}
+@keyframes wow{
+    0%{
+        border-color: beige;
+    }
+    100%{
+        border-color: black;
+     }
+ 
+}

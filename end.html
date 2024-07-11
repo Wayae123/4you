@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nasihat</title>
+    <style>
+@font-face {
+    font-family: 'clasic story';
+    src: url(font/Classic-Story.ttf);
+}
+@font-face {
+    font-family:'Love Story';
+    src: url(font/LoveStory.otf);
+ }
+body{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(180deg,rgb(255, 0, 85) 0%,rgb(139, 1, 47) 33%,rgb(22, 0, 8) 100%);
+}
+*{
+    user-select: none;
+    -webkit-user-select: none;
+ }  
+.background{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,rgb(255, 0, 85) 0%,rgb(139, 1, 47) 33%,rgb(22, 0, 8) 100%);
+    z-index: 1;
+    position: absolute;
+    overflow:auto;
+}
+
+.board{
+    width: 864px;
+    height: 500px;
+    background-color: rgb(146, 24, 64,0.6) ;
+    position: absolute;
+   box-shadow: 0px 0px 18px 10px rgb(189, 165, 154), inset 0px 0px 8px 5px rgb(54, 4, 2);
+   top: 170px;
+    left: 390px;
+  /*  right: 390px;
+    bottom: 150px;*/
+   z-index: 1;
+   place-items: center;
+}
+
+.background .rahasia{
+    width: 1600px;
+    height: 700px;
+}
+.board div p{
+    font-size: 30px;
+    font-family: 'clasic story';
+    padding: 30px;
+    color: beige ;
+    padding-top:10px ;
+    text-align: center;
+    
+}
+
+
+.background h1{
+    font-size: 70px;
+  /* margin-left: 370px;
+   margin-top: 80px;*/
+
+   position: absolute;
+   width: 980px;
+   height: 30px;
+  
+text-shadow: 5px 5px 13px beige;
+  font-family:'Love Story'; 
+  left: 426px;
+}
+
+.background .imo{
+    font-size: 70px;
+  /* margin-left: 370px;
+   margin-top: 80px;*/
+  color: beige;
+   position: absolute;
+   width: 980px;
+   height: 30px;
+  top:650px;
+text-shadow: 5px 5px 20px rgb(15, 13, 13);
+  font-family:'Love Story'; 
+  left: 338px;
+  text-align: center;
+}
+
+
+
+.layang img{
+    position:fixed;
+    height: 94px;
+    pointer-events: none;
+    
+  
+}
+.layang img:nth-child(1){
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+
+}
+.layang img:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.layang img:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.layang img:nth-child(4){
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.layang img:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.layang img:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+
+}
+.layang img:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.layang img:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.layang img:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.layang img:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+.layang img:nth-child(11){
+    top: 83%;
+    left: 87%;
+    animation: animate 9s linear infinite;
+}
+@keyframes animate{
+    0%{
+       transform: scale(0) translateY(0) rotate(0);
+       opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+     }
+ 
+}
+
+
+.background .tombol ul li{
+    position:relative;
+    height: 50px;
+    left: 680px;
+  
+    top: 220px;
+    width: 200px;
+    background-color: rgb(15, 13, 13);
+    z-index: 2;
+ text-align: center;
+
+    list-style: none;
+    margin-right: 40px;
+    font-family: 'clasic story';
+    font-size: 27px;
+    color: beige;
+    padding-top: 10px;
+border: 2px beige solid;
+transition: 1s;
+
+}
+.background .tombol a{
+    text-decoration: none;
+}
+.background .tombol ul li:hover{
+    color:rgb(15, 13, 13);
+    background-color: beige;
+    border: 2px rgb(15, 13, 13);
+
+}
+.background .tombol ul li:active{
+    color:rgb(15, 13, 13);
+    background-color: beige;
+    border: 2px rgb(15, 13, 13);
+
+}
+
+
+.background .tombol ul li p{
+   margin: auto;
+   
+}
+
+
+.background .tombol ul{
+    
+    display: flex;
+     
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <audio src="ade html\music\OMORI - Final Duet.mp3"
+    autoplay loop preload="auto"></audio>
+  <div class="background">  
+
+    <div class="layang">
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif"alt="logo"  >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif"alt="logo"  >
+       <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif"alt="logo"  >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif"alt="logo"  >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif"alt="logo"  >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+        <img src="ade html\c6385882317f64ed508ee1f8c9b878c8.gif" alt="logo" >
+     </div>
+
+
+
+     <h1>sebuah monolog kecil</h1>
+
+
+    <div class="rahasia"></div>
+    <div class="board">
+        <div>
+            <p class="pa">Remember how we learned about different languages in school? Well, there's 
+                <span style="font-weight: bold; color: rgb(216, 166, 1);">one language</span> that everyone in the world understand
+                No matter who they are.<span style="font-weight: bold; color: rgb(216, 166, 1);"> Kindness!</span> think about it
+                <span style="font-weight: bold; color: rgb(216, 166, 1);">kindness</span> is language in which<span style="color: black;
+                 font-weight: bold;"> deaf</span> can <span style="font-weight: bold; color: rgb(216, 166, 1);">hear</span>, the <span style="font-weight: bold;
+                 color: black;">blind</span> can <span style="font-weight: bold; color: rgb(216, 166, 1);">see</span>, a <span style="font-weight: bold;
+                 color: black;">paralyzed</span> can <span style="font-weight: bold; color: rgb(216, 166, 1);">move</span>, a mute can <span style="font-weight: bold; color: rgb(216, 166, 1);">speak</span>, and the <span style="color: black;
+                 font-weight: bold;">numb</span> can <span style="font-weight: bold; color: rgb(216, 166, 1);">feel</span>. 
+                thought it's very hard to show <span style="font-weight: bold; color: rgb(216, 166, 1);">small acts of kindness</span> to the people you don't know that's why you shouldn't beat yourself up for 
+                failing and doing it. the world is <span style="color: black;
+                 font-weight: bold;">full of pain, suffering and negativity like wars, discrimination, political conflict,</span> 
+                even someone giving you <span style="color: black;
+                 font-weight: bold;">a bad day at school for no reason</span>. you might wonder
+                 <span style=" color: gold;">"</span>why be <span style="font-weight: bold; color: rgb(216, 166, 1);">kind</span> when there's so much  <span style="color: black;
+                 font-weight: bold;">negativity</span> in the world<span style=" color: gold;">"</span> But that's where <span style="font-weight: bold; color: rgb(216, 166, 1);">humility</span> comes to play.
+                 <span style="font-weight: bold; color: rgb(216, 166, 1);">an act of kindness is an act of service where you choose to be good even when the world throws <span style="color: black;
+                    font-weight: bold;">negativity</span> on your way</span> 
+                by being the <span style="font-weight: bold; color: rgb(216, 166, 1);">light</span>, <span style="font-weight: bold; color: rgb(216, 166, 1);">not reacting to <span style="color: black;
+                    font-weight: bold;">darkness</span></span> not letting what they say affect what your intention is,
+                 kindness isn't just about others it's about you too, <span style="font-weight: bold; color: rgb(216, 166, 1);">one small act of kindness</span> can change your Consciousness,
+                 and the way you think of yourself. remember, in the end your kindness was never because they're unique or special. 
+                 <span style="font-weight: bold; color: rgb(255, 95, 2);">kindness is simply who you are, it reminds you of who you are</span></p>
+        </div>
+
+        
+    </div>
+    <p class="imo">terima kasih telah berkunjung</p>
+
+
+    <div class="tombol">
+      <ul>
+        <a href="surat.html"><li class="tekan1"><p>sebelum</p></li></a>
+       
+
+      </ul>  
+    </div>
+    </div>
+</body>
+</html>
