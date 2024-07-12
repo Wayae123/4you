@@ -3,7 +3,7 @@ body{
     padding: 0;
    
     width: 100%;
-    overflow:scroll;
+   /* overflow:scroll;*/
     height: 100%;
     background: linear-gradient(180deg,rgb(255, 0, 85) 0%,rgb(139, 1, 47) 33%,rgb(22, 0, 8) 100%);
 }
